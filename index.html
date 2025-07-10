@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>18th Call – The.cre8.lab__ | TCL</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+    }
+
+    /* Header */
+    .header {
+      background-color: #121212;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #e50914;
+    }
+
+    .header h1, .header div {
+      color: #fff;
+      margin: 0;
+    }
+
+    /* Hero */
+    .hero {
+      background-image: url('hero-18thcall.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin: 10px 0;
+      color: #e50914;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .hero a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background-color: #e50914;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .hero a:hover {
+      background-color: #b20710;
+    }
+
+    /* Episodes */
+    #episodes {
+      padding: 60px 40px;
+      text-align: center;
+      background-color: #1a1a1a;
+    }
+
+    #episodes h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    .episode-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .episode-card {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      width: 280px;
+      background: #000;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      color: #fff;
+      text-align: center;
+      font-family: 'Arial Black', sans-serif;
+    }
+
+    .episode-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .episode-card .title {
+      font-size: 36px;
+      color: #e50914;
+      margin: 10px 0;
+    }
+
+    .episode-card h2 {
+      font-size: 12px;
+      margin: 0;
+    }
+
+    .episode-card p {
+      font-size: 14px;
+      margin-top: 8px;
+      color: #ccc;
+    }
+
+    .episode-card .image {
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      width: 280px;
+    }
+
+    .upcoming {
+      margin-top: 50px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .upcoming h3 {
+      font-size: 24px;
+      color: #e50914;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #0d0d0d;
+      color: #bbb;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 2px solid #e50914;
+    }
+
+    .footer h2, .footer h3 {
+      color: #fff;
+    }
+
+    .footer a {
+      color: #e50914;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>The.cre8.lab__</h1>
+    <div>#TCL</div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-overlay">
+      <h2>Now Showing</h2>
+      <h1>18th Call – Web Series</h1>
+      <p>Experience the emotional rollercoaster of friendship, truth, and one call that changed everything. Episode 6 – the season finale – is coming soon.</p>
+      <a href="https://www.instagram.com/the.cre8.lab__?igsh=MW05dnE4N3FqcHJldg==">▶ Watch Episodes</a>
+    </div>
+  </div>
+
+  <!-- Episode Section -->
+  <div id="episodes">
+    <h2>All Episodes</h2>
+    <div class="episode-list">
+
+      <!-- Episode 1 -->
+      <div class="episode-card">
+        <div class="image" style="background-image: url('images/episode1.jpg');"></div>
+        <div style="padding: 20px;">
+          <p>EK CALL... JISNE SAB KUCH BADAL DIYA.</p>
+          <div class="title">18TH CALL</div>
+          <h2>EPISODE 1 – THE CALL</h2>
+          <p>The mystery begins with a missed call...</p>
+        </div>
+      </div>
+
+      <!-- Episode 2 -->
+      <div class="episode-card">
+        <div class="image" style="background-image: url('images/episode2.jpg');"></div>
+        <div style="padding: 20px;">
+          <p>EK RAAZ... JO DIL KO HILA DE.</p>
+          <div class="title">18TH CALL</div>
+          <h2>EPISODE 2 – THE SECRET</h2>
+          <p>The voice from the past brings truth to the surface.</p>
+        </div>
+      </div>
+
+      <!-- Episode 3 -->
+      <div class="episode-card">
+        <div class="image" style="background-image: url('images/episode3.png');"></div>
+        <div style="padding: 20px;">
+          <p>EK SAFAR... PURANE RISHTON TAK.</p>
+          <div class="title">18TH CALL</div>
+          <h2>EPISODE 3 – THE ESCAPE</h2>
+          <p>Yash searches for answers outside his comfort zone.</p>
+        </div>
+      </div>
+
+      <!-- Episode 4 -->
+      <div class="episode-card">
+        <div class="image" style="background-image: url('images/episode4.png');"></div>
+        <div style="padding: 20px;">
+          <p>EK CHAL... YA SACHAI?</p>
+          <div class="title">18TH CALL</div>
+          <h2>EPISODE 4 – THE SETUP</h2>
+          <p>Friendships begin to crack under pressure.</p>
+        </div>
+      </div>
+
+      <!-- Episode 5 -->
+      <div class="episode-card">
+        <div class="image" style="background-image: url('images/episode5.png');"></div>
+        <div style="padding: 20px;">
+          <p>USNE HI MAARA THA.</p>
+          <div class="title">18TH CALL</div>
+          <h2>EPISODE 5 - THE REVEAL</h2>
+          <p>KHATAM KISNE KI THI...?</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Upcoming -->
+    <div class="upcoming">
+      <h3>Upcoming Finale: Episode 6 – The End?</h3>
+      <p>The final episode of Season 1 drops soon. Will the truth finally set them free or destroy everything?</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h2>The.cre8.lab__ Studio</h2>
+    <p>Kota, Rajasthan</p>
+
+    <h3 style="margin-top: 30px;">Our Artists</h3>
+    <p>Yatharth Mishra <br> Vansh Naruka <br> Yash Dhakar</p>
+
+    <h3 style="margin-top: 30px;">Contact Us</h3>
+    <p>Email: contact@cre8lab.in | Phone: +91-9461741846</p>
+
+    <div style="margin-top: 20px;">
+      <a href="https://www.instagram.com/the.cre8.lab__?igsh=MW05dnE4N3FqcHJldg==">Instagram</a>
+      <a href="https://youtube.com/@yatharthmishra-p8y?si=4yRyjsP-iW8la1pk">YouTube</a>
+    </div>
+
+    <p style="margin-top: 30px; font-size: 12px; color: #666;">© 2025 The.cre8.lab__ | All rights reserved.</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    const cards = document.querySelectorAll('.episode-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => observer.observe(card));
+  </script>
+</body>
+</html>
